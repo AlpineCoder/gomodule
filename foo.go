@@ -1,12 +1,10 @@
 package foo
 
-import (
-  "math/rnd"
-  )
+import "math/rand"
 
-//SomeFunction does returns something
+//SomeFunc does returns something
 func SomeFunc(x int) int {
-  min := 10
-  max := 30
-  return rand.Intn(max - min) + min
+	min := 10
+	max := 30
+	return rand.Intn(max-min) + min
 }
